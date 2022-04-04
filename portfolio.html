@@ -1,0 +1,255 @@
+<!-- Ce site est un premier protype qui est voué à évoluer à l'avenir. Concernant le code CSS au sein de certaines balises, la raison est des difficultés à parfois cibler certaines balises. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AMGB - Acceuil</title>
+	<link rel="stylesheet" type="text/css" href="portfolio_style.css">
+</head>
+
+<body>
+
+	<!-- Création de la barre de navigation-->
+	<nav>
+
+		<!-- Logo AMGB -->
+
+		<a class="logo" href="portfolio.html" target="_self" title="Actualiser"><strong><</strong><strong style="color: #fff724">/</strong><strong>AMGB</strong><strong>></strong></a>
+
+		<!-- Eléments de la barre de navigation -->
+		<ul>
+			<li><a href="#acceuil">Acceuil</a></li>
+			<li><a href="#presentation">A propos</a></li>
+			<li><a href="#projets">Projets</a></li>
+			<li><a href="#objectifs">Et après ?</a></li>
+			<li><a href="#contact">Contact</a></li>
+      <li><a href="eng_portfolio.html" title="Translate in English"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"><i class='bi bi-translate'></i></li></a>    
+		</ul>		
+	</nav>
+
+
+<!-- Page d'acceuil -->
+
+	<!-- Texte et image de la page d'acceuil -->
+	<div class="banner" id="acceuil">
+		<div class="content">
+			<h2>Je suis <span class="auto-type"></span></h2>
+			<p>Bienvenue sur mon portfolio personnel : vous y trouverez le fruit de mon évolution en tant que novice dans le numérique. A travers ce site, j'entends exprimer le travail fourni depuis ma découverte du monde numérique jusqu'à présent.</p>
+			<a href="#presentation">Allons-y</a>
+		</div>
+		<img src="pc_b.png" class="image">
+	</div>
+
+<!-- Fonction JavaScript dynamisant indéfiniment une partie du titre (balise <h2></h2>) de la page d'acceuil -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script>
+		var typed = new Typed(".auto-type", {
+			strings: ["étudiant","lycéen", "motivé", "passionné"],
+			typeSpeed: 150,
+			backSpeed: 150,
+			loop: true
+		})
+	</script>
+
+
+
+<!-- Flexboxs de présentation -->
+
+<!-- Titre rubrique "A propos" -->
+	<div class="inner-width" id="presentation">
+        	<div class="fond_texte" style="background-color: #000; width: 200px; height: 70px; margin-top: 40px; margin-left: -55px; padding-left: 20px; padding-top: 5px;"><h1 style="color: #fff">A <span style="color: #fff724">PROPOS</span></h1>
+       		<div class="border" style="background-color: #fff; width: 95px; height: 4px;"></div></div>
+       	</br>
+	</div>
+
+<!-- Conteneur de flexboxs -->
+	<section class="container">
+
+		<!-- Flexbox "Brève présentation" -->
+			<div class="item1">
+				<h1>Brève <span style="color: #fff724">présentation</span></h1>
+			</br>
+				<p>Bonjour, je m'appelle Ateba Marcel Gabin Baleka de mon nom complet et j'ai actuellement 17 ans. Vous retrouverez ici mon portfolio professionnel où j'expose mes différents projets réalisés jusqu'à présent, qu'ils soient en collaboration ou individuels.</p>
+			</div>
+
+			<!-- Flexbox "Situation actuelle" -->
+			<div class="item2">
+				<h1>Situation <span style="color: #fff724">actuelle</span></h1>
+			</br>
+				<p>Je suis actuellement étudiant dans le secondaire en classe de Terminale (série générale) au Lycée Polyvalent Evariste Galois à Beaumont-Sur-Oise (95260).</p>
+			</div>
+
+			<!-- Flexbox "Profil professionel" -->
+			<div class="item3">
+				<h1>Profil <span style="color: #fff724">professionel</span></h1>
+			</br>
+				<p>Jeune personne motivée et travailleuse. Je me suis découvert un intérêt pour le multimédia depuis mon plus jeune âge. Depuis, cet intérêt a su se transformer en une passion.</p>
+			</div>
+	</section>
+
+<!-- Gallerie de projets -->
+
+	<!-- Introduction -->
+	<div class="gallery-section" id="projets">
+  	<div class="inner-width">
+    	<h1>MES <span style="color: #fff724">PROJETS</span></h1>
+      	<div class="border"></div>
+
+			<p>De mes premières expérimentations à l'âge de 12 ans jusqu'à présent, mon rapport au multimédia s'est progressivement installé dans ma vie active. Aidé par ma passion pour le jeu vidéo, la volonté de découvrir le monde du multimédia à travers d'autres aspects s'est faite naturellement. Ce qui m'a réelement aidé à m'intéresser au domaine est mon sens de la curiosité et ma volonté d'apprendre, en particulier quand j'y trouve de réel intérêt. Voici ci-dessous un extrait de mes projets multimédias, réalisés en classes de 4ème et 3ème dans l'optique d'expérimenter la création de contenu sur Instagram et en partie sur Snapchat.</p>
+
+		</br>
+
+		<!-- Insertion d'images d'illustration -->
+        	<div class="gallery"> 				
+          	<a href="cita35.jpg" class="image" title="Publication Instagram datant de 2019">
+            	<img src="cita35.jpg" alt="">
+          	</a>
+       
+        	
+          	<a href="cita17.jpg" class="image" title="Publication Instagram datant de 2019">
+            	<img src="cita17.jpg" alt="">
+          	</a>
+       
+
+          	<a href="compte snap.jpg" class="image" title="Premier mockup jamais réalisé datant de 2019 afin de présenter mon propre compte Snapchat">
+            	<img src="compte snap.jpg" alt="">
+          	</a>
+        
+
+          	<a href="auboutdustylo.jpg" class="image" title="Logo de profil du compte Instagram datant de 2019">
+            	<img src="auboutdustylo.jpg" alt="">
+          	</a>
+        
+	<!-- Non effacé car possiblement utile à l'avenir -->
+
+          	<!--<a href="img/5.png" class="image">
+            	<img src="img/5.png" alt="">
+          	</a>
+
+          	<a href="img/6.png" class="image">
+            	<img src="img/6.png" alt="">
+          	</a>
+
+          	<a href="img/7.png" class="image">
+            	<img src="img/7.png" alt="">
+          	</a>
+
+          	<a href="img/8.png" class="image">
+            	<img src="img/8.png" alt="">
+          	</a>-->
+					</div>
+   	</div>
+
+   		<!-- "Voir mes autres projets" -->
+  		<button>
+  			<a href="https://drive.google.com/drive/folders/1-1jwUtOkQPYEakedPIpaExG9YPicZMqn?usp=sharing" target="_blank">Voir mes autres projets</a>
+  		</button>
+	</div>
+
+<!-- Rubrique "Et après ?" -->
+
+	<!-- Introduction -->
+	<div class="inner-width" id="objectifs">
+
+		<!-- Titre de section  -->
+  	<div class="fond_texte" style="background-color: #000; width: 200px; height: 70px; margin-top: 40px; margin-left: -55px; padding-left: 20px; padding-top: 5px;"><h1 style="color: #fff" >ET <span style="color: #fff724">APRÈS</span> ?</h1>
+    <div class="border" style="background-color: #fff; width: 105px; height: 4px;"></div>
+  	</div>
+       </br>
+       <p style="margin-bottom: 20px;">Désireux d'évolution permanente, je me prépare à développer d'autres projets. En restant lucide sur ses capacités actuelles, je ne peux pour l'instant que m'axer sur le développement web, le graphisme et l'audiovisuel. J'aimerais aussi, dans un avenir relativement proche, être capable d'étendre la dimension de mes projets avec l'apport de codage d'application. Voici un inventaire de quelques projets futurs en cours :</p>
+	</div>
+
+	<!-- Conteneur de flexboxs -->
+	<div class="container">
+
+		<!-- Flexbox "Maintenance du site" -->
+  	<div class="box">
+    	<div class="imgBx">
+      	<img src="img_noire.jpg">
+    	</div>
+      	<div class="content">
+        	<h3>Maintenance du <span>site</span></h3>
+        	<p>Ce site est un <span style="color: #fff724">portfolio</span> rendant compte de mes capacités à l'instant T. En prenant en compte le fait que j'ai probablement une marge de <span style="color: #fff724">progression</span>, l'idée est donc de faire évoluer ce site. C'est pourquoi des <span style="color: #fff724">mises à jour</span> sont à prévoir. Eles seront axées sur une amélioration du <span style="color: #fff724">confort de navigation</span> et de l'<span style="color: #fff724">ergonomie du site</span>. Il sera possible de retrouver par exemple une <span style="color: #fff724">newsletter</span>.  Il est donc possible de considérer ce site comme un <span style="color: #fff724">journal de bord</span> faisant part de mon <span style="color: #fff724">évolution</span> depuis le jour de création du site.</p>
+      	</div>
+  	</div>
+
+  	<!-- Flexbox "C'est intéressant" -->
+      <div class="box">
+        <div class="imgBx">
+          <img src="img_noire.jpg">
+        </div>
+        <div class="content">
+          <h3>C'est <span style="color: #fff724">Intéressant</span></h3>
+          <p><span style="color: #fff724">Intéressant</span> est un blog basé sur la culture générale. Il aura pour vocation de répondre à des questions du <span style="color: #fff724">quotidien</span> auquelles les gens n'ont pas forcément réponse. Intéressant pourra se muer comme <span style="color: #fff724">aide</span> aux parents sans réponse face à certaines questions de leurs enfants. Ce sera aussi le moyen d'<span style="color: #fff724">éveiller la curiosité des plus petits</span>, notamment par la présence de <span style="color: #fff724">ressources diverses et variées</span>.</p>
+        </div>
+      </div>
+
+      <!-- Flexbox "Wordev" -->
+      <div class="box">
+        <div class="imgBx">
+          <img src="img_noire.jpg">
+        </div>
+        <div class="content">
+          <h3>Wor<span>dev</span></h3>
+          <p><span style="color: #fff724">Wordev</span> est projet futur nécessitant <span style="color: #fff724">plusieurs années d'expérience</span>. Je n'irai pas jusque dire que cela est un projet ultime, mais il reste néanmoins un projet <span style="color: #fff724">important</span>. Il a pour but de promouvoir le codinng <span style="color: #fff724">à travers le monde</span>, et pourquoi pas aussi <span style="color: #fff724">sensibiliser</span> la communauté informatique sur le sujet. L'aboutissement de ce projet dépendra des <span style="color: #fff724">opportunités</span> se présentant à moi, mais aussi de mon <span style="color: #fff724">évolution</span> tant sur le plan <span style="color: #fff724">professionnel</span> que sur le plan <span style="color: #fff724">personnel</span>.</p>
+        </div>
+  		</div>
+	</div>
+
+<!-- Footer -->
+
+	<footer class="footer" id="contact">
+  		<div class="container">
+  	 		<div class="row">
+
+  	 			<!-- Rubrique "Me contacter" -->
+  	 			<div class="footer-col">
+  	 				<h4>Me <strong style="color: #fff724;">contacter</strong></h4>
+  	 				<ul>
+  	 					<li><a href="mailto:atebamarcelgabinbaleka@gmail.com">Mail</a></li>
+  	 					<li><a href="tel:+33782644396">Téléphone</a></li>
+  	 					<li><a href="https://www.bing.com/maps?q=bruyeres+sur+oise&FORM=HDRSC4" target="_blank">Ville de provenance</a></li>
+  	 				</ul>
+  	 			</div>
+
+  	 			<!-- Rubrique "En savoir plus" -->
+  	 			<div class="footer-col">
+  	 				<h4>En savoir <strong style="color: #fff724;">plus</strong></h4>
+  	 				<ul>
+  	 					<li><a href="http://www.lyc-galois-beaumont.ac-versailles.fr/" target="_blank">Lieu d'études actuel</a></li>
+  	 					<li><a href="https://drive.google.com/drive/folders/1-1jwUtOkQPYEakedPIpaExG9YPicZMqn?usp=sharing" target="_blank">Processus créatif</a></li>
+  	 					<li><a href="https://www.canva.com/design/DAE3srzptE0/W9f7IUTbxKjqtx64yoHdwg/view?utm_content=DAE3srzptE0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Voir mon CV</a></li>
+  	 					<li><a href="#objectifs">Objectifs</a></li>
+  	 				</ul>
+  	 			</div>
+
+  	 			<!-- Rubrique "Utilisé pour apprendre" -->
+  	 			<div class="footer-col">
+  	 				<h4>Utilisé pour <strong style="color: #fff724;">apprendre</strong></h4>
+  	 				<ul>
+  	 					<li><a href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a></li>
+  	 					<li><a href="https://www.youtube.com/c/Gravenilvectuto" target="_blank">Youtube : Graven - Développement</a></li>
+  	 					<li><a href="https://www.youtube.com/c/LeDesignerduWeb" target="_blank">YouTube : Le Designer du Web</a></li>
+            	<li><a href="https://www.sublimetext.com/" target="_blank">SublimeText</a></li>
+  	 				</ul>
+  	 			</div>
+
+  	 			<!-- Rubrique "Réseaux sociaux" -->
+  	 			<div class="footer-col">
+  	 				<h4>Réseaux <strong style="color: #fff724;">sociaux</strong></h4>
+  	 				<div class="social-links">
+  	 					<a href="https://www.tiktok.com/@__amgb__" target="_blank"><i class="fab fa-tiktok"></i></a>
+  	 					<a href="https://twitter.com/_amgb_" target="_blank"><i class="fab fa-twitter"></i></a>
+  	 					<a href="https://www.instagram.com/atebamarcelgabin/" target="_blank"><i class="fab fa-instagram"></i></a>
+  	 					<a href="https://www.linkedin.com/in/ateba-marcel-gabin-b-6173a21b6/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  		</div>
+	</footer>
+
+</body>
+</html>

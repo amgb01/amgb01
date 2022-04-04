@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+/* Barre de navigation */
+
+body{
+	background: #fff;
+	min-height: 50vh;
+	margin: O auto;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 30px 60px;
+	z-index: 100000;
+	cursor: pointer;
+	background: #000;
+}
+
+nav.sticky
+{
+	padding: 5px 70px;
+	background: #000;
+}
+
+nav .logo
+{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+
+}
+
+nav ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	margin-top: Opx;
+}
+
+nav ul li 
+{
+	position: relative;
+	list-style: none;
+}
+
+nav ul li a 
+{
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 0.3px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+nav ul li a:hover {
+	color: #fff724;
+}
+
+/* Page d'accueil */
+
+#banner script:hover {
+	color: #fff724;
+}
+
+.banner
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: black;
+	background-size: contain;
+	padding: 100px 100px 100px;
+	margin: 0px 0px 0px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+}
+
+.banner .content {
+	max-width: 700px;
+}
+
+.banner .content h2 {
+	font-size: 3em;
+	color: #fff;
+}
+
+.banner .content p {
+	font-size: 1em;
+	color: #fff;
+}
+
+.banner .content a {
+	display: inline-block;
+	background: #fff;
+	color: #000;
+	padding: 8px 20px;
+	text-decoration: none;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+.banner .content a:hover {
+  background-color: #fff724;
+  color: black;
+  transition:  background-color 2s color 2s;
+}
+
+.banner .image {
+	max-width: 400px;
+	margin-left: 70px;
+}
+
+@media (max-width:  991px)
+{
+	header
+	{
+		padding: 10px 20px;
+		flex-direction: column-reverse;
+	}
+	.banner {
+		padding: 150px 20px 50px;
+		flex-direction: column-reverse;
+	}
+	.banner .image {
+		margin-left: 0;
+		max-width: 80%;
+	}
+	.banner .content h2 {
+		font-size: 2em;
+	}
+}
+
+span {
+	color: #fff724;
+}
+
+
+/*Flexboxes : à propos*/
+
+.titre-propos span{
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.titre-propos {
+	text-align: left;
+	margin: 30px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+
+.item1, .item2, .item3 {
+	position: static;
+	width: 300px;
+	padding: 50px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 15px 50px rgba(0, 0, 0,.2);
+	justify-content: space-between;
+	color: white;
+	background-color: black;
+	transition: transform .2s;
+  margin: 50px;
+}
+
+.item1:hover{
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+}
+
+.item2:hover{
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+}
+
+.item3:hover{
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+}
+
+
+/*Gallerie*/
+
+
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+  background: #000;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1{
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.gallery-section p{
+	color: #fff;
+}
+
+.border{
+  width: 125px;
+  height: 4px;
+  background: #fff;
+  margin: 1px 0 30px;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  transition: .5s ease-in-out;
+}
+
+.gallery-section .gallery .image:hover{
+	filter: brightness(80%);
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4);
+}
+
+.gallery-section button{
+	margin: 20px 0 0 51px;
+	text-decoration: none;
+	background: #fff;
+	color: #000;
+	padding: 8px 20px;
+	font-weight: 600;
+	margin-top: 20px;
+	border: none;
+}
+
+.gallery-section button a{
+	text-decoration: none; 
+	color: #000;
+}
+
+.gallery-section button:hover{
+  background-color: #fff724;
+  color: black;
+  transition:  background-color 2s color 2s;
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
+
+/*Projets*/
+
+	/*Titre*/
+
+@media screen and (max-width: 1200px)
+{
+	h1 {
+		font-size: calc(25px + 3.3vw);
+	}
+}
+
+.container {
+  max-width: 1000px;
+  display: flex;
+  margin: 50px 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 15px;
+}
+
+.box .imgBx {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box:hover .imgBx img {
+  opacity: 0;
+}
+
+.box .content {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  height: 60px;
+  background: #000;
+  transition: 0.5s;
+  overflow: hidden;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.box:hover .content {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.box .content h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.box .content p {
+  margin: 10px 0 0;
+  padding: 0;
+  opacity: 0;
+  line-height: 1.2em;
+  transition: 0.5s;
+  text-align: justify;
+  color: #fff;
+}
+
+.box:hover .content p {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+
+
+/* Footer */
+
+footer{
+	position: fixed;
+	bottom: 0;
+	margin: 0 0 0 0;
+}
+
+@media (max-height: 800px)
+{
+		footer{
+			position: static;
+		}
+		header{
+			padding-top: 40px;
+		}
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: #eaf0f2;
+}
+
+header {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 300px;
+    font-size: 35px;
+}
+
+header h2 {
+    color: #f0525f;
+}
+
+header span {
+    color: #eaa03f;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #000;
+    padding: 40px 0;
+    margin: 30px 0 0 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #fff724;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #fff724;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #000;
+	background-color: #fff724;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
